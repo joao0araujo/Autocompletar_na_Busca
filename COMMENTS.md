@@ -1,0 +1,1 @@
+- Primeiro commit, criando repositório e arquivo de comentários;
