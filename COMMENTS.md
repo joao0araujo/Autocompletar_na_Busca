@@ -9,6 +9,7 @@
         - O sistema deve sugerir termos relacionados com o termo digitado (préfixo) 
         - O sistema deve autocompletar ao clicar na recomendação
         - A lista de termos tem que adaptar conforme o usuario digita as palavras
+        - Deverá ter uma barra de rolagem nas sugestões, caso elas passem de dez
     
     - Requisitos não funcionais:
         - Usabilidade: O site terá que ser responsivo
