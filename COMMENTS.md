@@ -1,1 +1,16 @@
-- Primeiro commit, criando repositório e arquivo de comentários;
+- Primeiro commit, criando repositório e arquivo de comentários.
+
+- Criei uma branch de testes para não estar mexendo diretamente na main.
+
+- Decidi  por levantar os requisitos do sistema para que a compreensão do mesmo fosse mais adequada, cumprindo com os requisitos colocados no desafio.
+
+    - Requisitos funcionais: 
+        - Permitir a inserção dos termos atravez da digitação do usuario
+        - O sistema deve sugerir termos relacionados com o termo digitado (préfixo) 
+        - O sistema deve autocompletar ao clicar na recomendação
+        - A lista de termos tem que adaptar conforme o usuario digita as palavras
+    
+    - Requisitos não funcionais:
+        - Usabilidade: O site terá que ser responsivo
+        - Desempenho: A resposta à digitação terá que ser rápida
+        - Confiabilidade: A função de autocompletar deverá funcionar corretamente
