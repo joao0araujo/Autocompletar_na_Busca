@@ -1,4 +1,6 @@
-- Primeiro commit, criando repositório e arquivo de comentários;
+- Primeiro commit, criando repositório e arquivo de comentários.
+
+- Criei uma branch de testes para não estar mexendo diretamente na main.
 
 - Decidi  por levantar os requisitos do sistema para que a compreensão do mesmo fosse mais adequada, cumprindo com os requisitos colocados no desafio.
 
