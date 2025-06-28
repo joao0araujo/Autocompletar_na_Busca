@@ -15,3 +15,5 @@
         - Usabilidade: O site terá que ser responsivo
         - Desempenho: A resposta à digitação terá que ser rápida
         - Confiabilidade: A função de autocompletar deverá funcionar corretamente
+
+- Como o design é livre, fiz um esboço de uma tela basica para desktop e a versão da tela para mobile. Utilizei o Canva para ter mais praticidade e rapidez na produção (já que era algo opcional), porém o Figma seria mais usual nesse sentido.
