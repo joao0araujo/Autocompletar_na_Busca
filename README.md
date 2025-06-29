@@ -5,6 +5,6 @@ Esse desafio visa criar uma barra de pesquisa integrada com o back-end, que dar√
 
 ### Design
 
-![Tela desktop](./design/Desktop.png)
+![Tela desktop](./Design/Desktop.png)
 
-![Tela mobile](./design/Mobile.png)
+![Tela mobile](./Design/Mobile.png)
