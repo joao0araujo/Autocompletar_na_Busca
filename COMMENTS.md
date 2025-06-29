@@ -31,13 +31,16 @@
 
 - Iniciei criando uma pasta "backend" para armazenar os arquivos. Em seguida utilizei os comandos npm para instalação dos modulos do node.
 
-> npm init -y
-> npm install typescript ts-node-dev -D
-> npx tsc --init
-
+```
+npm init -y
+npm install typescript ts-node-dev -D
+npx tsc --init
+```
 
 - Nas minhas pesquisas percebi que temos duas opções de servidor para manipulação do GraphQL, express-graphql ou apollo-server.
 
 - Decidi pelo segundo, uma vez que indicava ser mais completo e mais utilizado para aplicar GraphQL junto ao Node. Também pelo fato do apollo-server ter um pacote específico, o apollo-server-express, projetado para se integrar perfeitamente com o framework Express, o que me daria possibilidade de migrar para o express em caso de futuros problemas na aplicação.
 
-> npm install graphql apollo-server
+```
+npm install graphql apollo-server
+```

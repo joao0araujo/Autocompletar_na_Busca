@@ -2,3 +2,9 @@
 
 
 Esse desafio visa criar uma barra de pesquisa integrada com o back-end, que dará sugestões de pesquisa para o usuário.
+
+### Design
+
+![Tela desktop](./design/Desktop.png)
+
+![Tela mobile](./design/Mobile.png)
