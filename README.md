@@ -8,7 +8,7 @@ Design foi feito no Canva, visando trazer a identidade visual da JusBrasil para 
 
 ### Desktop
 
-<img width="960px" height="540px" src="./Design/Desktop.png" alt="Tela desktop">
+<img width="480px" height="270px" src="./Design/Desktop.png" alt="Tela desktop">
 
 ### Mobile
 
