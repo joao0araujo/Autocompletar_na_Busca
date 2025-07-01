@@ -1,10 +1,15 @@
 # Desafio auto-completar na busca
 
-
 Esse desafio visa criar uma barra de pesquisa integrada com o back-end, que dará sugestões de pesquisa para o usuário.
 
-### Design
+## Design
 
-![Tela desktop](./Design/Desktop.png)
+Design foi feito no Canva, visando trazer a identidade visual da JusBrasil para o projeto.
 
-![Tela mobile](./Design/Mobile.png)
+### Desktop
+
+<img width="480px" height="270px" src="./Design/Desktop.png" alt="Tela desktop">
+
+### Mobile
+
+<img width="187px" height="333px" src="./Design/Mobile.png" alt="Tela mobile">
