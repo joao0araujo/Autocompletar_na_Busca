@@ -44,3 +44,9 @@ npx tsc --init
 ```
 npm install graphql apollo-server
 ```
+
+- Iniciei a construção do server, inicialmente fazendo o index.ts e configurando o Apollo-server. Logo após construindo os arquivos resolvers e schema.
+
+- Já pensei a estruturação do banco, para construir as rotas de maneira correta e eficiente, e decidi por ter três atributos: id, termo e cont_pesquisa. A ideia de ter um contador para a quantidade de vezes que a palavra foi pesquisada é visando uma futura escalabilidade para que os termos mais pesquisados apareçam mais acima nas recomendações.
+
+- Fiz uma Query de buscar que está vindo de uma lista qualquer, somente para testar sua funcionalidade.
