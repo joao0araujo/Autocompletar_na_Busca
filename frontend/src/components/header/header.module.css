@@ -1,0 +1,62 @@
+.container{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.divLogo{
+    width: 400px;
+    height: 106px;
+    cursor: pointer;
+}
+
+.divLogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.smallLogo{
+    display: none;
+    width: 250px;
+    height: 250px;
+}
+
+.smallLogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.burger{
+    display: none;
+    width: 150px;
+    height: 150px;
+}
+
+.burger img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 600px){
+
+    .divLogo{
+        display: none;
+    }
+
+    .smallLogo{
+        display: inline;
+    }
+
+    .burger{
+        display: inline;
+    }
+
+}
+
