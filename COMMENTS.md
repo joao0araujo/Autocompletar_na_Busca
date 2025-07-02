@@ -66,4 +66,14 @@ npx prisma init
 
 - Em seguida, fiz a configuração dos arquivos gerados, tanto do .env (o qual direciona para o banco), tanto do schema.prisma, no qual temos as configurações do tipo do do banco (sqlite) e o modelo que será usado para gerar a tabela "Assuntos". Indiquei no codigo do Prisma que o atributo cont_quantidade será iniciado como zero, uma vez que ao cadastrar uma palavra no banco, não se tem uma metrica se já tentaram pesquisar ou não, portanto iniciei a contagem zerada.
 
-- Ao rodar o comando: ```npx prisma migrate dev --name inicio```, eu acabei por criar a migração do codigo para SQL e criando o ```dev.db```, nosso banco em sqlite para o projeto.
+- Ao rodar o comando ```npx prisma migrate dev --name inicio```, eu acabei por criar a migração do codigo para SQL e criando o ```dev.db```, nosso banco em sqlite para o projeto.
+
+- Rodei o comando ```npx prisma generate``` para atualizar o Prisma Client com os meus modelos de dados. Em seguida iniciei a configuração da integração do Prisma com o graphQL no index.ts.
+
+- Em seguida, iniciei a troca dos resolvers para a logica aplicada no Prisma. Tive que criar uma mutation e um input no schema.ts para que eu pudesse criar uma Mutation nos resolvers que adicionasse dados ao banco, visando alimentar o banco recem criado. No resolvers eu alterei a Query para utilzar o Prisma e adicionei a Mutation para alimentar o banco. No index.ts, importei o Prisma Client, e coloquei os mesmo dentro de um context, para garantir que ele possa ser utilizado pelos resolvers.
+
+- Percebi um erro no meu banco, uma vez que poderiam haver dois cadastros com o mesmo termo. Dessa forma modifiquei o schema.prisma e coloquei o termo como unique, porque um termo não poderá existir duas vezes no mesmo banco, e dei novamente os comandos para a migração do Prisma: ```npx prisma migrate dev --name inicio``` e ```npx prisma generate```.
+
+- Assim, o backend já está funcional e integrado com o banco de dados.
+
+

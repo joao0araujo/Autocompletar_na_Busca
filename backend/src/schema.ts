@@ -15,6 +15,15 @@ const typeDefs = gql`
         todosAssuntos: [Assunto]
         assunto(id: Int!): Assunto
     }
+
+    input CriarAssuntos {
+        termo: String!
+        cont_pesquisa: Int
+    }
+        
+    type Mutation {
+        cadastrarAssuntos(data: [CriarAssuntos!]!) : Int!
+    }
 `;
 
 export { typeDefs };
