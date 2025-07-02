@@ -10,15 +10,15 @@ export default function Header(){
 
         <div className={styles.container}>
             <div className={styles.divLogo}>
-                <img src={Logo} alt="Logo principal da Jusbrasil"></img>
+                <img src={Logo} alt="Logo principal da Jusbrasil" />
             </div>
 
             <div className={styles.smallLogo}>
-                <img src={SmallLogo} className='smallLogo' alt="Logo reduzido da Jusbrasil"></img>
+                <img src={SmallLogo} className='smallLogo' alt="Logo reduzido da Jusbrasil" />
             </div>
 
             <div className={styles.burger}>
-                <img src={Burger} alt="Menu hamburger"></img>
+                <img src={Burger} alt="Menu hamburger" />
             </div>
         </div>
     
