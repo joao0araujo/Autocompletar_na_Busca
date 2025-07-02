@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    height: 90px;
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+}
+
+.caixas img{
+    margin-top: -130px;
+    margin-right: -150px;
+    width: 436px;
+    height: 448px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 600px){
+
+    .caixas img{
+        margin-top: -50px;
+        margin-right: -90px;
+        width: 240px;
+        height: 265px;
+    }
+}

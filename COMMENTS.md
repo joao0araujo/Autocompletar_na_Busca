@@ -97,3 +97,7 @@ npm install
 
 - Coloquei os arquivos das imagens (.png) presentes no site na pasta assets dentro de src, por boas praticas.
 
+- Iniciei a configuração do header, adicionando as imagens e formatando com respectivo CSS.
+
+- Construi também o bottom, apenas importando a imagem e alinhando com a pagina, conforme o design.
+
