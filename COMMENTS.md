@@ -76,4 +76,24 @@ npx prisma init
 
 - Assim, o backend já está funcional e integrado com o banco de dados.
 
+- Para o front, poderia usar Vite ou Next, decidi pelo Vite por ser mais simples e direto. Como a aplicação só tem uma pagina, um das principais vantagens de usar Next não seria utilizada (roteamento).
+
+```
+npm create vite@latest
+npm install
+```
+
+- Iniciei a configuração padrão do React, removendo o codigo inicial gerado pelo Vite e iniciando a estruturação do projeto com as devida criação das pastas.
+
+- Criei um favicon.ico personalizado para o site e coloquei na pasta public para ser reconhecido como icone do site.
+
+- Separei a estruturação da aplicação em três componentes com base nos requisitos funcionais:
+
+    - Header
+    - Botton
+    - Search Bar
+
+- Uma vez estruturado, criei as pastas e os determinados arquivos para começar a configuração do front.
+
+- Coloquei os arquivos das imagens (.png) presentes no site na pasta assets dentro de src, por boas praticas.
 
