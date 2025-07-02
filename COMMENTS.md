@@ -101,3 +101,12 @@ npm install
 
 - Construi também o bottom, apenas importando a imagem e alinhando com a pagina, conforme o design.
 
+- Tive que reupar as imagens, pois acabei baixando com a resolução errada, acabei baixando imagens com toda a resolução da tela do design no Canva (1920x1080), porém em PNG e portanto invisivel, tendo somente o icone no meio. Baixei novamente as imagens na resolução correta, com o PNG contendo apenas as imagens e nenhum espaço invisivel.
+
+- Daí acabei tendo que retocar o CSS do header e do bottom, uma vez que anteriormente as imagens estavam muito maiores, deixando os icones pequenos.
+
+- Adicionei um input com placeholder, pois decidi por seguir um design mais minimalista, daí preferi o placeholder em relação ao titulo.
+
+- Adicionei também um botão, e coloquei dentro da tag uma imagem com a lupa.
+
+- Configurei o CSS da barra segundo o design.
