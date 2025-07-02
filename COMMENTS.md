@@ -47,6 +47,23 @@ npm install graphql apollo-server
 
 - Iniciei a construção do server, inicialmente fazendo o index.ts e configurando o Apollo-server. Logo após construindo os arquivos resolvers e schema.
 
-- Já pensei a estruturação do banco, para construir as rotas de maneira correta e eficiente, e decidi por ter três atributos: id, termo e cont_pesquisa. A ideia de ter um contador para a quantidade de vezes que a palavra foi pesquisada é visando uma futura escalabilidade para que os termos mais pesquisados apareçam mais acima nas recomendações.
+- Já pensei a estruturação do banco, para construir as rotas de maneira correta e eficiente, teremos uma tabela Assuntos e decidi por ter três atributos: id, termo e cont_pesquisa. A ideia de ter um contador para a quantidade de vezes que a palavra foi pesquisada é visando uma futura escalabilidade para que os termos mais pesquisados apareçam mais acima nas recomendações.
 
 - Fiz uma Query de buscar que está vindo de uma lista qualquer, somente para testar sua funcionalidade.
+
+- Iniciei as configurações do Prisma com o SQlite, primeiro instalando as dependencias do Prisma para o node.
+
+```
+npm install prisma -D
+npm install @prisma/client
+```
+
+- Em seguida iniciei o Prisma. Escolhi o prisma pela sua praticidade em lidar com o banco e não necessitar de executar linhas de codigo em  SQL, dinamizando a construção da aplicação.
+
+```
+npx prisma init
+```
+
+- Em seguida, fiz a configuração dos arquivos gerados, tanto do .env (o qual direciona para o banco), tanto do schema.prisma, no qual temos as configurações do tipo do do banco (sqlite) e o modelo que será usado para gerar a tabela "Assuntos". Indiquei no codigo do Prisma que o atributo cont_quantidade será iniciado como zero, uma vez que ao cadastrar uma palavra no banco, não se tem uma metrica se já tentaram pesquisar ou não, portanto iniciei a contagem zerada.
+
+- Ao rodar o comando: ```npx prisma migrate dev --name inicio```, eu acabei por criar a migração do codigo para SQL e criando o ```dev.db```, nosso banco em sqlite para o projeto.
