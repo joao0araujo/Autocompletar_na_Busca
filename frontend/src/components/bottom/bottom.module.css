@@ -8,20 +8,17 @@
 }
 
 .caixas img{
-    margin-top: -130px;
-    margin-right: -150px;
-    width: 436px;
-    height: 448px;
-    object-fit: cover;
+    margin-right: -45px;
+    width: 200px;
+    height: 195px;
 }
 
 
 @media (max-width: 600px){
 
     .caixas img{
-        margin-top: -50px;
         margin-right: -90px;
-        width: 240px;
-        height: 265px;
+        width: 200px;
+        height: 195px;
     }
 }
