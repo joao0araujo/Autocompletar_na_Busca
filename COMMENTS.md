@@ -110,3 +110,17 @@ npm install
 - Adicionei também um botão, e coloquei dentro da tag uma imagem com a lupa.
 
 - Configurei o CSS da barra segundo o design.
+
+- Voltei para o back para iniciar a integração entre backend e frontend. Criei uma type query que recebe um termo qualquer e retorna uma lista de Assunto (o type que criei conforme a modelagem do banco).
+
+- Ao tentar aplicar a logica de busca com o modelo usual de busca em conjunto do prisma (findMany), percebi que teria que tratar os dados que vinham do servidor, uma vez que tinham requisitos a serem cumpridos, como, por exempo, o termo digitado estar em qualquer parte do termo no banco.
+
+- Dessa forma, fiz a busca com o modelo que usa o comando SQL feito pelo proprio usuario ($queryRaw), o que dinamizou a produção uma vez que tenho uma certa experiencia com SQL. De forma que também não foi necessario fazer uma logica em typescript para filtrar esses dados, o que me economizou linhas de codigo.
+
+```
+SELECT * FROM "Assunto" WHERE "termo" LIKE ${'%'+ termo + '%'} ORDER BY "cont_quantidade" DESC LIMIT 20
+```
+
+- Sobre aquele atributo "cont_quantidade" que eu adicionei ao modelar o banco no Prisma, a minha ideia era que os termos mais pesquisados fossem exibidos acima, por exemplo, ao pesquisar: "processo por" as recomendações que apareceriam logo acima seriam as mais pesquisadas, como por exemplo "processo por danos morais". Dessa forma, dei uma deve escalada no projeto inicial, pensando na experiencia do usuario, uma vez que isso melhoraria o acesso as buscas e agilizaria a busca por determinado assunto, o qual é mais procurado.
+
+- Finalizando a rota da pesquisa no back.
