@@ -141,3 +141,95 @@ SELECT * FROM "Assunto" WHERE "termo" LIKE ${'%'+ termo + '%'} ORDER BY "cont_qu
 
 - Com todas as funcionalidades testadas, decidi por partir para a dockerização do projeto.
 
+- Criei os arquivos do Docker para realizar a Build.
+
+- Rodei o projeto com o Docker, tudo funcionando corretamente.
+
+- O banco foi salto junto ao container (por opção propria, uma vez que fica mais facil de rodar o projeto nas outras maquinas, já que o banco já vai estar populoso), o que faz com que não seja preciso rodar comandos no server. Contudo, se o banco não estiver alimentado, segue um prompt para alimentá-lo:
+
+- **OBS: Rodar o projeto, pois provavelmente o banco já estará populado. Se já estiver, ignore as instruções abaixo**
+
+```
+Entre em: http://localhost:4000/
+
+Cole o comando abaixo no workspace e rode:
+
+mutation CadastrarVariosAssuntos {
+  cadastrarAssuntos(data: [
+    { termo: "Ação Judicial" },
+    { termo: "Advocacia" },
+    { termo: "Advogado(a)" },
+    { termo: "Alvará Judicial" },
+    { termo: "Parte Interessada" },
+    { termo: "Apelação" },
+    { termo: "Arbitragem" },
+    { termo: "Audiência" },
+    { termo: "Autos do Processo" },
+    { termo: "Autor da Ação" },
+    { termo: "Citação" },
+    { termo: "Cláusula Contratual" },
+    { termo: "Coisa Julgada" },
+    { termo: "Comarca" },
+    { termo: "Conciliação" },
+    { termo: "Condenação" },
+    { termo: "Contrato" },
+    { termo: "Custas Processuais" },
+    { termo: "Dano Moral" },
+    { termo: "Defesa Prévia" },
+    { termo: "Defensor Público" },
+    { termo: "Delegado" },
+    { termo: "Denunciação da Lide" },
+    { termo: "Depoimento Pessoal" },
+    { termo: "Direito Adquirido" },
+    { termo: "Direito Administrativo" },
+    { termo: "Direito Civil" },
+    { termo: "Direito Constitucional" },
+    { termo: "Direito do Trabalho" },
+    { termo: "Direito Penal" },
+    { termo: "Direitos Humanos" },
+    { termo: "Dolo" },
+    { termo: "Embargos" },
+    { termo: "Escrivão Judicial" },
+    { termo: "Estagiário de Direito" },
+    { termo: "Execução Fiscal" },
+    { termo: "Foro Competente" },
+    { termo: "Habeas Corpus" },
+    { termo: "Homicídio Culposo" },
+    { termo: "Impenhorabilidade" },
+    { termo: "Injunção" },
+    { termo: "Inquérito Policial" },
+    { termo: "Intimação Judicial" },
+    { termo: "Jurisprudência" },
+    { termo: "Juízo de Primeiro Grau" },
+    { termo: "Laudo Pericial" },
+    { termo: "Litigância de Má-Fé" },
+    { termo: "Mandado de Segurança" },
+    { termo: "Ministério Público" },
+    { termo: "Petição Inicial" }
+    { termo: "detrimento" },
+    { termo: "discernimento" },
+    { termo: "cumprimento" },
+    { termo: "desenvolvimento" },
+    { termo: "conhecimento" },
+    { termo: "fomento" },
+    { termo: "segmento" },
+    { termo: "sentimento" },
+    { termo: "fundamento" },
+    { termo: "comprimento" },
+    { termo: "ressentimento" },
+    { termo: "elemento" },
+    { termo: "recenseamento" },
+    { termo: "momento" },
+    { termo: "constrangimento" },
+    { termo: "argumento" },
+    { termo: "entendimento" },
+    { termo: "cerceamento" },
+    { termo: "procedimento" },
+    { termo: "engajamento" }
+  ])
+  
+}
+
+
+
+- **Minhas percepções:** Adorei fazer o projeto, acho que tive uma curva de aprendizado muito boa, principalmente para quem nunca tinha tido um contato com GraphQL, achei muito intessante a forma como podemos lidar com as requisições. Pensei em encrementar mais o codigo (aumentando o cont_quantidade caso o usuario clicasse no botão de pesquisar), mas acredito que tenha feito um bom MVP, de toda forma, o  cont_quantidade está aplicado na logica do banco para futura escalabilidade.
