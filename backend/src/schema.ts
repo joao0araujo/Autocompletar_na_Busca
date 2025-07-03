@@ -1,6 +1,6 @@
 import { gql } from "apollo-server"
 
-/*Id para simbolizar o id do assunto no banco; termo para simbolizar o termo pesquisado; 
+/*Como eu pensei a estruturação do banco: Id para simbolizar o id do assunto no banco; termo para simbolizar o termo pesquisado; 
 cont_quantidade um contador para simbolizar a quantidade de vezes que o termo foi pesquisado*/
 
 const typeDefs = gql`
@@ -23,6 +23,10 @@ const typeDefs = gql`
         
     type Mutation {
         cadastrarAssuntos(data: [CriarAssuntos!]!) : Int!
+    }
+
+    type Query {
+        sugestaoDeTermo(termo: String!): [Assunto!]
     }
 `;
 
