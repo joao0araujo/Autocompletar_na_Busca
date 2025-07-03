@@ -24,6 +24,10 @@ const typeDefs = gql`
     type Mutation {
         cadastrarAssuntos(data: [CriarAssuntos!]!) : Int!
     }
+
+    type Query {
+        sugestaoDeTermo(termo: String!): [Assunto!]
+    }
 `;
 
 export { typeDefs };
