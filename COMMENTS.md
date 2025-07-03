@@ -121,24 +121,6 @@ npm install
 SELECT * FROM "Assunto" WHERE "termo" LIKE ${'%'+ termo + '%'} ORDER BY "cont_quantidade" DESC LIMIT 20
 ```
 
-- Sobre aquele atributo "cont_quantidade" que eu adicionei ao modelar o banco no Prisma, a minha ideia era que os termos mais pesquisados fossem exibidos acima, por exemplo, ao pesquisar: "processo por" as recomendações que apareceriam logo acima seriam as mais pesquisadas, como por exemplo "processo por danos morais". Dessa forma, dei uma leve escalada no projeto inicial, pensando na experiencia do usuario, uma vez que isso melhoraria o acesso as buscas e agilizaria a busca por determinado assunto, o qual é mais procurado.
+- Sobre aquele atributo "cont_quantidade" que eu adicionei ao modelar o banco no Prisma, a minha ideia era que os termos mais pesquisados fossem exibidos acima, por exemplo, ao pesquisar: "processo por" as recomendações que apareceriam logo acima seriam as mais pesquisadas, como por exemplo "processo por danos morais". Dessa forma, dei uma deve escalada no projeto inicial, pensando na experiencia do usuario, uma vez que isso melhoraria o acesso as buscas e agilizaria a busca por determinado assunto, o qual é mais procurado.
 
 - Finalizando a rota da pesquisa no back.
-
-- Voltando pro front, instalei o Apollo Client e o GraphQL no front, utilizando o comando: ```npm install @apollo/client graphql```.
-
-- Fiz a chamada do Apollo Client no React e iniciei a integração com o framework.
-
-- No componente search, fiz toda a logica do codigo, chamando a busca e substituindo o valor na determinada celula (usei lista para ter um melhor controle, mas poderiam ser divs).
-
-- Essa parte logica foi mais tranquila de se lidar pois o limit que usei no SQL já resolveu um problema que seria limitar o retorno junto ao typescript.
-
-- Com relaçao ao scroll, usei CSS para limitar a quantidade visivel e fiz um scroll para a quantidade não visivel.
-
-- Eu pensei em fazer um codigo para alterar o cont_quantidade, porém como a aplicação não tem o ato de pesquisar em si, desisti da ideia.
-
-- Realizei todos os testes da integração e consertei a responsividade do CSS.
-
-
-- Com todas as funcionalidades testadas, decidi por partir para a dockerização do projeto.
-
