@@ -229,7 +229,7 @@ mutation CadastrarVariosAssuntos {
   ])
   
 }
-
+```
 
 
 - **Minhas percepções:** Adorei fazer o projeto, acho que tive uma curva de aprendizado muito boa, principalmente para quem nunca tinha tido um contato com GraphQL, achei muito intessante a forma como podemos lidar com as requisições. Pensei em encrementar mais o codigo (aumentando o cont_quantidade caso o usuario clicasse no botão de pesquisar), mas acredito que tenha feito um bom MVP, de toda forma, o  cont_quantidade está aplicado na logica do banco para futura escalabilidade.
