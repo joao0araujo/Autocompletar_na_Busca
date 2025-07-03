@@ -101,8 +101,10 @@ export default function Search(){
                         <li className={styles.itemSugestao} key={index}>
                             
                             <button onClick={() => handleSuggestionClick(item.termo)}>
+
                                 <img src={lupa} alt='Lupa'/>
                                 {TextoEmNegrito(item.termo, termoBusca)}
+                                
                             </button>
 
                         </li>  
