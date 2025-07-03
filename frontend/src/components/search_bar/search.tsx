@@ -1,6 +1,6 @@
 import styles from './search.module.css'
 import lupa from '../../assets/Lupa.png'
-import { useState, useEffect, useCallback, type JSX} from 'react';
+import { useState, useEffect, type JSX} from 'react';
 import { gql, useLazyQuery } from '@apollo/client';
 
 
@@ -34,7 +34,7 @@ export default function Search(){
     const [valorInput, setValorInput] = useState<string>('');
 
 
-    const [fetchSuggestions, { loading, data }] = useLazyQuery< RetornoTermos, TermoSugerido >(buscandoSugestão);
+    const [fetchSuggestions, { data }] = useLazyQuery< RetornoTermos, TermoSugerido >(buscandoSugestão);
 
     useEffect(() => {
 

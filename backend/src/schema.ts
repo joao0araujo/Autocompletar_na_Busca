@@ -1,6 +1,6 @@
 import { gql } from "apollo-server"
 
-/*Id para simbolizar o id do assunto no banco; termo para simbolizar o termo pesquisado; 
+/* Estruturação: Id para simbolizar o id do assunto no banco; termo para simbolizar o termo pesquisado; 
 cont_quantidade um contador para simbolizar a quantidade de vezes que o termo foi pesquisado*/
 
 const typeDefs = gql`
