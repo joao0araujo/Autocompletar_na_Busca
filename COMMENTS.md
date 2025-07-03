@@ -139,5 +139,6 @@ SELECT * FROM "Assunto" WHERE "termo" LIKE ${'%'+ termo + '%'} ORDER BY "cont_qu
 
 - Realizei todos os testes da integração e consertei a responsividade do CSS.
 
+
 - Com todas as funcionalidades testadas, decidi por partir para a dockerização do projeto.
 
