@@ -1,0 +1,38 @@
+services:
+
+  backend:
+
+    build: ./backend
+
+    container_name: Autocomplete_backend
+
+    ports:
+      - "4000:4000"
+
+    volumes:
+      - ./backend:/app/backend
+      - /app/backend/node_modules
+      - prisma_data:/app/backend/prisma
+
+    environment:
+      - DATABASE_URL=file:./prisma/dev.db
+
+
+  frontend:
+
+    build: ./frontend
+
+    container_name: Autocomplete_frontend
+
+    ports:
+      - "5173:5173"
+
+    volumes:
+      - ./frontend:/app/frontend
+      - /app/frontend/node_modules
+
+    depends_on:
+      - backend
+
+volumes:
+  prisma_data:
